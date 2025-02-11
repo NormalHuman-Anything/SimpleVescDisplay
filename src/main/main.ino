@@ -279,7 +279,7 @@ void loop() {
   if (UART.data.error == 0){ // Display Watts when no error(0)
 	  tft.setFreeFont(DATAFONTSMALL2);
 	  Data10.setTextColor(TFT_WHITE, TFT_BLACK);
-	  tft.setCursor(260, 25);
+	  tft.setCursor(250, 25);
 	  dtostrf(watts, 5, 0, fmt);
 	  Data10.print(fmt);
 	
@@ -307,7 +307,7 @@ void loop() {
 
   //Motor-Phase Current --------------------------------------------------------------------------
 
-  tft.setCursor(270, 220);
+  tft.setCursor(265, 220);
   tft.setFreeFont(DATAFONTSMALL);
   Data6.setTextColor(TFT_GREEN, TFT_BLACK);
   dtostrf(UART.data.avgMotorCurrent, 3, 0, fmt);
@@ -320,7 +320,7 @@ void loop() {
   
   //Battery Current --------------------------------------------------------------------------
 
-  tft.setCursor(220, 220);
+  tft.setCursor(215, 220);
   tft.setFreeFont(DATAFONTSMALL);
   Data7.setTextColor(TFT_GREEN, TFT_BLACK);
   dtostrf(UART.data.avgInputCurrent, 3, 0, fmt);
