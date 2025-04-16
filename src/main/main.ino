@@ -56,9 +56,9 @@ int COLOR_WARNING_TEMP_MOTOR = TFT_WHITE; // Color for motor temperature warning
 #define MOTOR_TEMP_WARNING2 120 // Second motor temperature warning threshold (120°C)
 
 int BATTERY_WARNING_COLOR = TFT_WHITE; // Color for battery voltage warnings
-#define BATTERY_WARNING_HIGH 67.2 // High voltage warning threshold (67.2V)
-#define BATTERY_WARNING_LOW 54.4 // Low voltage warning threshold (54.4V)
-#define BATTERY_WARNING_0 48.0 // Voltage Cut warning treshold(48V)
+#define BATTERY_WARNING_HIGH 126.0 // High voltage warning threshold (67.2V)
+#define BATTERY_WARNING_LOW 102.0 // Low voltage warning threshold (54.4V)
+#define BATTERY_WARNING_0 90 // Voltage Cut warning treshold(48V)
 
 int ERROR_WARNING_COLOR = TFT_WHITE; // Color for error warnings
 
